@@ -1,0 +1,11 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include<stdio.h>
+int main()
+{
+	int i = 1, reg = 1;
+	int n = 0;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) reg = reg * i;
+	printf("%d\n", reg);
+	return 0;
+}
