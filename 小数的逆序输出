@@ -1,0 +1,15 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include<stdio.h>
+int main()
+{
+	double a;
+	scanf("%lf", &a);
+	int b =  10 * a;
+	int k = b / 1000;
+	int l = b % 1000 / 100;
+	int m = b % 100 / 10;
+	int n = b % 100 % 10;
+	double j = n + 0.1 * m + 0.01 * l + 0.001 * k;
+	printf("%.3f\n", j);
+	return 0;
+}
