@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	double num = 0;
+	double i = 1, n = 1;
+	for (i = 1; i <= 100; i++) {
+		num = num + (1 / i) * n;
+		n =-n;
+	}
+	printf("%lf", num);
+	return 0;
+}
